@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHMTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999.xhtml" lang="en">
+<head>
+	<title>XHTML Attempt</title>
+
+</head>
+<body>
+	<h1 title="OH LORD ITS GOING HORRIBLY">Trying</h1>
+	<p>To make this work..!</p>
+	<script type="text/javascript">
+	function doMotivate(){
+		var m = document.forms["form1"]["motivation"].value;
+		m = m.toLowerCase(); // in future read from xml file (or other type) for list of values and definitions to enter
+		switch(m){
+			case "cocaine":
+				alert("you are a bad person");
+				break;
+			case "communism":
+				alert("you are an equal person");
+				break;
+			case "death":
+				alert("you okay boo?");
+				break;
+			case "puns":
+				alert("good person :)");
+				break;
+			case "food":
+				alert("molly stop");
+				break;
+			case "black tar heroin":
+				alert("...");
+				break;
+			case "gingers":
+				alert("there's a joke about souls here im missing");
+				break;
+			case "kiera":
+			 	alert("hayley stop.");
+			 	break;
+			case "20mm anti-tank rifle":
+				alert("dylan stop.");
+				break;
+			default:
+				var msg = new Array("that's... creative.", "what?",
+				"what am i supposed to answer that with",
+				"wow, really?", "goodness me that's inventive",
+				"i'm unsure of my opinion on this",
+				"further analysis required...", "well that was expected of you");
+				alert(msg[m.length % msg.length])
+				return true;
+		}
+		
+		return true;
+	}
+	</script>
+	<form name="form1" onsubmit="return doMotivate()">
+		<fieldset>
+			<legend>Personal Analysis:</legend>
+		Your motivation:<br>
+		<input type="text" autofocus="autofocus" name="motivation">
+		<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>

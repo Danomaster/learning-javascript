@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		//constructor function
+		function person(name, age){
+			this.name = name;
+			this.age = age;
+			//method linked to object
+			this.yearsUntilRetire = yearsLeft;
+		}
+		function yearsLeft(){ // function for object
+			var numYears = 65 - this.age; //this. to take properties
+			return numYears;
+		}
+		//creating instance of object
+		var phil = new person("phil", 24);
+	   
+	   //object initialiser
+	   deatheater = {name:"derrick", age:27}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function writeStats(dude){
+			document.write("name: " + dude.name
+			 + "<br/>age: " + dude.age
+			 +"<br/>till retire: " + dude.yearsUntilRetire());
+		}
+		var tuna = "hey i am a tuna";
+		document.bgColor = "#0077FF";
+		writeStats(phil);
+		document.write(phil.yearsUntilRetire());
+		</script>
+		<br/>
+		<a href="arrayObjects.html">ArrayObjects Page</a>
+
+	</body>
+</html>
